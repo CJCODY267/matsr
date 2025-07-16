@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATS-R Home</title>
+    <link rel="stylesheet" href="styles.css">
+</html>
+
+<body>
+    <header>
+        <h1>Welcome to the MATS-R Application!</h1>
+    </header>
+    <main>
+        <p>Search below to request Movies and TV Shows:</p>
+        <form id="searchForm">
+            <input type="text" name="query" placeholder="Enter movie or TV show name" required>
+            <button type="submit">Search</button>
+    </main>
+
+    <div id="results" class="results-grid"></div>
+
+    <section>
+        <button type="button" onclick="window.location.href='requests.html'">See Requests</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 cjcody.net</p>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+

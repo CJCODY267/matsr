@@ -1,0 +1,157 @@
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 20; /* Remove default padding */
+    height: 100%; /* Full height for the body */
+    font-family: Arial, sans-serif; /* Default font family */
+    background-color: #aaaaaa; /* Light gray background */
+}
+
+header {
+    padding: 100px 0px 10px 0px; /* Padding for top */
+    text-align: center; /* Centered text */
+    vertical-align: text-top; /* Align header text to the top */
+    font-size: 25px; /* Larger font size */
+    text-shadow: #95d5ff 0px 0px 5px; /* Text shadow for header */
+    color: #007194; /* Blue text color */
+    font-weight: bold; /* Ensure bold text */
+
+}
+
+main {
+    padding: 20px; /* Padding around the main content */
+    background-color: #aaaaaa; /* Light gray background */
+    font-family: Arial, sans-serif; /* Font family for the main content */
+    line-height: 1.6; /* Improved readability with line height */
+    text-align: center; /* Centered text */
+    text-size-adjust: 100%; /* Prevent text size adjustment on mobile devices */
+    font-size: 20px; /* Default font size */
+}
+
+input[type="text"] {
+    width: 75%; /* Full width for text input */
+    padding: 15px; /* Padding inside the input */
+    margin: 10px 0; /* Margin for spacing */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    border-radius: 10px; /* Rounded corners for input */
+    border: 1px solid #ccc; /* Light gray border */;
+    box-shadow: #007194 0px 0px 5px; /* Text shadow for input */
+}
+
+main button {
+    padding: 12px 50px 10px 50px; /* Padding for button */
+    text-align: center; /* Centered text in button */
+    vertical-align: middle; /* Align button text vertically */
+    font-size: 20px; /* Larger font size for button */
+    margin: 10px 0; /* Margin for spacing */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners for button */
+    background-color: #007194; /* blue background */
+    color: white; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: #007194 0px 0px 2px; /* Text shadow for button */
+}
+
+main button:hover {
+    background-color: #004153; /* Darker blue on hover */
+}
+
+section {
+    padding: 20px; /* Padding around the section */
+    background-color: #aaaaaa; /* Light gray background */
+    font-family: Arial, sans-serif; /* Font family for the section */
+    line-height: 1.6; /* Improved readability with line height */
+    text-align: center; /* Centered text */
+    text-size-adjust: 100%; /* Prevent text size adjustment on mobile devices */
+    font-size: 20px; /* Default font size */
+}
+
+section button {
+    padding: 12px 50px 10px 50px; /* Padding for button */
+    text-align: center; /* Centered text in button */
+    vertical-align: bottom; /* Align button text vertically */
+    font-size: 20px; /* Larger font size for button */
+    margin: 60px 0; /* Margin for spacing */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners for button */
+    background-color: #007194; /* blue background */
+    color: white; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: #007194 0px 0px 2px; /* Text shadow for button */
+    align-content: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+section button:hover {
+    background-color: #004153; /* Darker blue on hover */
+}
+
+footer {
+    padding: 10px 0px; /* Padding for top and bottom */
+    text-align: center; /* Centered text */
+    vertical-align: bottom; /* Align footer to the bottom */
+    font-size: 14px; /* Smaller font size for footer */
+    background-color: #b6b6b6; /* Light gray background for footer */
+    width: 100%; /* Full width for footer */
+    position: fixed; /* Fixed position at the bottom */ 
+    bottom: 0; /* Align to the bottom of the viewport */
+
+}
+
+
+/* grid for results */
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+/* each movie card */
+.movie-card {
+  background: #fff;
+  padding: .5rem;
+  border-radius: .5rem;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,.1);
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: .25rem;
+  margin-bottom: .5rem;
+}
+
+.movie-card h3 {
+  font-size: 1.1rem;
+  margin: .5rem 0 .25rem;
+}
+
+.movie-card p {
+  font-size: .9rem;
+  margin-bottom: .5rem;
+}
+
+.request-btn {
+  padding: .4rem .8rem;
+  font-size: .9rem;
+  border: none;
+  border-radius: .25rem;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+.request-btn:disabled {
+  background: #aaa;
+  cursor: default;
+}
+
+/* visual state for a requested item */
+.request-btn.requested {
+  background-color: #28a745;    /* green */
+  color: #fff;
+}
+
+/* prepend a checkmark when requested */
+.request-btn.requested::before {
+  content: "✓ ";
+}
